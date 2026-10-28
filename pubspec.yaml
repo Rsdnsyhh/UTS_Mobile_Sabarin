@@ -1,0 +1,42 @@
+# Nama paket proyek. Jangan diubah, karena sudah dipakai oleh proyek Anda.
+name: uts_mobile
+
+# Deskripsi singkat proyek.
+description: "Sabarin - Aplikasi Hitung Antrian Pembeli."
+
+# Mencegah proyek ini terpublikasi tidak sengaja ke pub.dev.
+publish_to: 'none'
+
+# Versi aplikasi: nomor versi (1.0.0) diikuti nomor build (+1).
+version: 1.0.0+1
+
+# Batas versi Dart yang diperlukan oleh proyek.
+environment:
+  sdk: ^3.13.5
+
+# Paket-paket yang dibutuhkan aplikasi saat berjalan.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Font ikon bergaya iOS (bawaan proyek baru).
+  cupertino_icons: ^1.0.8
+
+  # Paket state management (Cubit dan BLoC). WAJIB ada,
+  # karena main.dart mengimpor package:flutter_bloc/flutter_bloc.dart.
+  flutter_bloc: ^8.1.6
+
+# Paket yang hanya dipakai saat pengembangan, bukan di aplikasi jadi.
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Kumpulan aturan penulisan kode yang disarankan.
+  flutter_lints: ^6.0.0
+
+# Pengaturan khusus Flutter.
+flutter:
+
+  # Menyertakan font Material Icons agar kelas Icons (misalnya
+  # Icons.home_rounded) dapat dipakai pada aplikasi.
+  uses-material-design: true
